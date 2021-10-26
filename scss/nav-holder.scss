@@ -1,0 +1,88 @@
+nav {
+	height: 140px;
+	background-color: #000;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	.logo {
+		width: 110px;
+		height: 96px;
+		background-image: url(../images/logo/logo-pupplove.png);
+		background-color: coral;
+	}
+	.nav-holder {
+		width: 700px;
+		position: fixed;
+		right: 20px;
+		background-color: chartreuse;
+
+		.links {
+			display: flex;
+			justify-content: space-between;
+			a {
+				text-decoration: none;
+				color: white;
+				font-family: Arial, Bold;
+				font-size: 30px;
+			}
+
+			.bars {
+				height: 30px;
+				width: 30px;
+				display: flex;
+				// display: none;
+			}
+
+			.bars .bar {
+				display: block;
+				width: 25px;
+				margin: 5px 0;
+				background-color: white;
+				height: 3px;
+				border-radius: 5px;
+				transition: all .3s ease-in-out;
+			}
+			.bars.active .bar:nth-child(2) {
+				opacity: 0;
+			}
+			.bars.active .bar:nth-child(1) {
+				transform: translateY(8px) rotate(45deg);
+			}
+			.bars.active .bar:nth-child(3) {
+				transform: translateY(-8px) rotate(-45deg);
+			}
+			.links {
+				display: flex;
+				background-color: #000;
+				height: 140px;
+				width: 100vw;
+				overflow: hidden;
+				margin-right: -10px;
+				align-items: center;
+				justify-content: space-around;
+				transition: height .4s, opacity .4s ease-in;
+			}
+			.links.active {
+				height: 100vh;
+				opacity: 1;
+			}
+		}
+	}
+}
+
+// =======RESPONSIVENESS=======//
+
+@media screen and (max-width: 960px) {
+	.bars {
+		display: block;
+	}
+	.links {
+		background-color: #000;
+		height: 0;
+		opacity: 0;
+		margin-right: -10px;
+		flex-direction: column;
+		transition: height .4s, opacity .4s ease-in;
+	}
+}

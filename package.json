@@ -1,0 +1,22 @@
+{
+  "name": "certhomework2",
+  "version": "1.0.0",
+  "description": "certhw2",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "serve": "live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cmorgan333/certHomework2.git"
+  },
+  "author": "Carrie Powell",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cmorgan333/certHomework2/issues"
+  },
+  "homepage": "https://github.com/cmorgan333/certHomework2#readme"
+}

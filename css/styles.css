@@ -19,3 +19,86 @@ h6,
 p {
   margin-bottom: 16pxß;
 }
+
+nav {
+  height: 140px;
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .logo {
+  width: 110px;
+  height: 96px;
+  background-image: url(../images/logo/logo-pupplove.png);
+  background-color: coral;
+}
+nav .nav-holder {
+  width: 700px;
+  position: fixed;
+  right: 20px;
+  background-color: chartreuse;
+}
+nav .nav-holder .links {
+  display: flex;
+  justify-content: space-between;
+}
+nav .nav-holder .links a {
+  text-decoration: none;
+  color: white;
+  font-family: Arial, Bold;
+  font-size: 30px;
+}
+nav .nav-holder .links .bars {
+  height: 30px;
+  width: 30px;
+  display: flex;
+}
+nav .nav-holder .links .bars .bar {
+  display: block;
+  width: 25px;
+  margin: 5px 0;
+  background-color: white;
+  height: 3px;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+nav .nav-holder .links .bars.active .bar:nth-child(2) {
+  opacity: 0;
+}
+nav .nav-holder .links .bars.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+nav .nav-holder .links .bars.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+nav .nav-holder .links .links {
+  display: flex;
+  background-color: #000;
+  height: 140px;
+  width: 100vw;
+  overflow: hidden;
+  margin-right: -10px;
+  align-items: center;
+  justify-content: space-around;
+  transition: height 0.4s, opacity 0.4s ease-in;
+}
+nav .nav-holder .links .links.active {
+  height: 100vh;
+  opacity: 1;
+}
+
+@media screen and (max-width: 960px) {
+  .bars {
+    display: block;
+  }
+
+  .links {
+    background-color: #000;
+    height: 0;
+    opacity: 0;
+    margin-right: -10px;
+    flex-direction: column;
+    transition: height 0.4s, opacity 0.4s ease-in;
+  }
+}
