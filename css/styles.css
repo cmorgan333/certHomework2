@@ -19,3 +19,106 @@ h6,
 p {
   margin-bottom: 16pxß;
 }
+
+.logo-holder {
+  background-color: #000;
+}
+.logo-holder .logo {
+  width: 107px;
+  height: 95px;
+  background-image: url(../images/logo/logo-pupplove.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 99;
+  top: 20px;
+  left: 50px;
+}
+
+.navHolder {
+  position: relative;
+}
+
+.bars {
+  display: none;
+}
+
+.bars .bar {
+  display: block;
+  width: 25px;
+  margin: 5px 0;
+  background-color: white;
+  height: 3px;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.bars.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.bars.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.bars.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.links {
+  display: flex;
+  background-color: #000;
+  height: 140px;
+  width: 100vw;
+  overflow: hidden;
+  margin-right: -10px;
+  padding-left: 100px;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: height 0.4s, opacity 0.4s ease-in;
+}
+.links a {
+  text-decoration: none;
+  color: white;
+  font-family: Arial, Bold;
+  font-size: 30px;
+}
+
+.links.active {
+  height: 300px;
+  opacity: 1;
+}
+
+@media screen and (max-width: 960px) {
+  .logo-holder {
+    height: 95px;
+    background-color: #000;
+  }
+
+  .navHolder {
+    background-color: #000;
+    margin-left: -10px;
+  }
+
+  .bar-position {
+    display: flex;
+    justify-content: right;
+    padding-right: 30px;
+  }
+
+  .bars {
+    display: block;
+    color: white;
+  }
+
+  .links {
+    background-color: #000;
+    height: 0;
+    opacity: 1;
+    margin-left: -10px;
+    padding-left: 30px;
+    flex-direction: column;
+    transition: height 0.4s, opacity 0.4s ease-in;
+  }
+}
