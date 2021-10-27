@@ -267,40 +267,48 @@ footer .footer-content .socials .icon-container .twit {
   font-family: Arial, Bold;
   font-size: 60px;
   color: #000;
-  margin: 150px auto;
+  margin: 150px auto 150px auto;
   text-align: center;
 }
 
 .profile-content {
   min-height: 200px;
-  background-color: #fae9ee;
+  background-color: #bfbfbf;
   margin-bottom: 150px;
+  padding-bottom: 100px;
 }
 .profile-content .pup-team {
   height: 60px;
-  width: 600px;
+  width: 400px;
   font-family: Arial, Bold;
   font-size: 40px;
   color: #000;
-  margin: 0 auto;
+  margin: 0 auto 100px auto;
   padding-top: 50px;
 }
 .profile-content .pup-profile {
   width: 800px;
   min-height: 300px;
-  margin: 100px auto;
+  margin: 50px auto;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
+  background-color: #e4e4e4;
+  border-radius: 42px;
 }
-.profile-content .pup-profile .pup-image {
+.profile-content .pup-profile .pupimage-container {
+  min-height: 300px;
+  width: 300px;
+}
+.profile-content .pup-profile .pupimage-container .pup-image {
   width: 258px;
   height: 250px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  position: relative;
+  margin-left: 0;
+  margin-top: 0;
 }
 .profile-content .pup-profile .pup1 {
   background-image: url(../images/images/pupprofileone.png);
@@ -312,6 +320,7 @@ footer .footer-content .socials .icon-container .twit {
   width: 400px;
   min-height: 100px;
   margin-bottom: 50px;
+  margin-top: 50px;
 }
 .profile-content .pup-profile .pup-content h1 {
   font-family: Arial, Bold;
@@ -336,7 +345,7 @@ footer .footer-content .socials .icon-container .twit {
   margin: 100px auto 50px auto;
 }
 .browse-content .puppy-background {
-  background-color: #fae9ee;
+  background-color: #c45379;
   margin-bottom: 100px;
 }
 .browse-content .puppies-container {
