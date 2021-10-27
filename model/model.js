@@ -1,10 +1,9 @@
-var MODEL = (function() {
+var MODEL = (function(){
 
     var _updateView = function(pageName){
 
         if(pageName != "") {
-            $.get(`pages/${pageName}/${pageName}
-            .html`, function(data){
+            $.get(`pages/${pageName}/${pageName}.html`, function(data){
                 $("#app").html(data);
             });
         }else {
