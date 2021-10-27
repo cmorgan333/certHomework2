@@ -125,6 +125,15 @@ p {
     height: 300px;
   }
 }
+footer {
+  height: 200px;
+  background-color: #000;
+}
+footer .footer-content {
+  width: 1200px;
+  background-color: chartreuse;
+}
+
 .hero {
   height: 1226px;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/images/heropuppylove.jpg);
@@ -219,7 +228,6 @@ p {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: chartreuse;
   margin-bottom: 150px;
 }
 .profile-content .pup-profile .pup-image {
