@@ -402,6 +402,7 @@ footer .footer-content .socials .icon-container .twit {
   border-left: none;
   border-color: #000;
   border-radius: 0 10px 10px 0;
+  background-color: white;
 }
 .browse-content .puppies-container .puppy-wrapper .puppy-description h1 {
   width: 170px;
