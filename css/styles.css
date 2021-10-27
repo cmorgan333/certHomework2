@@ -86,7 +86,6 @@ p {
 }
 
 .links.active {
-  height: 300px;
   opacity: 1;
 }
 
@@ -120,5 +119,9 @@ p {
     padding-left: 30px;
     flex-direction: column;
     transition: height 0.4s, opacity 0.4s ease-in;
+  }
+
+  .links.active {
+    height: 300px;
   }
 }
