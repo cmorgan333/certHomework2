@@ -367,22 +367,6 @@ footer .footer-content .socials .icon-container .twit {
   padding-top: 15px;
 }
 
-@media screen and (max-width: 1200px) {
-  .button-row {
-    display: flex;
-    justify-content: center;
-    background-color: chartreuse;
-    opacity: 0.5;
-  }
-  .button-row .button-box {
-    margin-bottom: 50px;
-  }
-  .button-row .button-box .button-fill {
-    width: 380px;
-    height: 160px;
-    background-color: purple;
-  }
-}
 @media screen and (max-width: 1780px) {
   .hero .dialogue-box {
     width: 100%;
@@ -401,6 +385,29 @@ footer .footer-content .socials .icon-container .twit {
   }
   .hero .dialogue-box .dialogue-button p {
     opacity: none;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .hero .button-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: chartreuse;
+    opacity: 0.5;
+  }
+  .hero .button-row .button-box {
+    width: 400px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero .button-row .button-box .button-fill {
+    width: 380px;
+    height: 80px;
+    font-size: 30px;
+    margin: 0 auto;
+    padding-left: 20px;
   }
 }
 .browse-content h1 {
