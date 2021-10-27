@@ -126,12 +126,76 @@ p {
   }
 }
 footer {
-  height: 200px;
+  height: 250px;
   background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 footer .footer-content {
-  width: 1200px;
-  background-color: chartreuse;
+  width: 1600px;
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .footer-content .footer-logo {
+  width: 107px;
+  height: 95px;
+  background-image: url(../images/logo/logo-pupplove.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+footer .footer-content .footer-box .footer-button {
+  width: 300px;
+  height: 60px;
+  border: 3px solid;
+  border-color: white;
+  border-radius: 24px;
+  margin-top: 20px;
+}
+footer .footer-content .footer-box .btn1 {
+  font-family: Arial, Bold;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  padding-top: 10px;
+}
+footer .footer-content .footer-box .btn2 {
+  font-family: Arial, Bold;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  padding-top: 10px;
+}
+footer .footer-content .socials h1 {
+  font-family: Arial, Bold;
+  font-size: 30px;
+  color: white;
+  margin-left: 25px;
+  margin-bottom: 25px;
+}
+footer .footer-content .socials .icon-container {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer-content .socials .icon-container .icon {
+  width: 50px;
+  height: 50px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+footer .footer-content .socials .icon-container .fbook {
+  background-image: url(../images/socials/facebook.png);
+}
+footer .footer-content .socials .icon-container .insta {
+  background-image: url(../images/socials/insta.png);
+}
+footer .footer-content .socials .icon-container .twit {
+  background-image: url(../images/socials/twitter.png);
 }
 
 .hero {
@@ -210,7 +274,7 @@ footer .footer-content {
 .profile-content {
   min-height: 200px;
   background-color: #fae9ee;
-  margin-bottom: 100px;
+  margin-bottom: 150px;
 }
 .profile-content .pup-team {
   height: 60px;
@@ -228,7 +292,7 @@ footer .footer-content {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-bottom: 150px;
+  padding-bottom: 50px;
 }
 .profile-content .pup-profile .pup-image {
   width: 258px;
@@ -261,5 +325,5 @@ footer .footer-content {
   color: #000;
   letter-spacing: 0.4px;
   line-height: 30px;
-  margin-top: 30px;
+  margin-bottom: 30px;
 }

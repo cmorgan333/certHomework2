@@ -88,7 +88,7 @@
 .profile-content {
 	min-height: 200px;
 	background-color: #fae9ee;
-	margin-bottom: 100px;
+	margin-bottom: 150px;
 	.pup-team {
 		height: 60px;
 		width: 600px;
@@ -106,7 +106,8 @@
 		display: flex;
 		justify-content: space-around;
 		align-items: center;
-		margin-bottom: 150px;
+		padding-bottom: 50px;
+		// background-color: chartreuse;
 
 		.pup-image {
 			width: 258px;
@@ -141,7 +142,7 @@
 				color: #000;
 				letter-spacing: .4px;
 				line-height: 30px;
-				margin-top: 30px;
+				margin-bottom: 30px;
 			}
 		}
 	}
