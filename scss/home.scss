@@ -1,4 +1,5 @@
 .hero {
+	width: 100%;
 	height: 1226px;
 	background-image: linear-gradient(to right, $overlay, $overlay), url(../images/images/heropuppylove.jpg);
 	background-position: center;
@@ -6,7 +7,7 @@
 	background-repeat: no-repeat;
 
 	.dialogue-box {
-		height: 320px;
+		min-height: 320px;
 		display: flex;
 		justify-content: right;
 		align-items: center;
@@ -152,6 +153,96 @@
 				letter-spacing: .4px;
 				line-height: 30px;
 				margin-bottom: 30px;
+			}
+		}
+	}
+}
+
+// ===BROWSE CUTE PUPPIES! BUTTON====//
+.topofpage-container {
+	width: 1700px;
+	display: flex;
+	justify-content: center;
+	.topofpage-border {
+		width: 400px;
+		height: 200px;
+		border: 5px solid;
+		border-color: #000;
+		border-radius: 20px;
+		margin-bottom: 100px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0 auto 100px auto;
+		.topofpage-fill {
+			width: 380px;
+			height: 180px;
+			border-radius: 14px;
+			background-color: #000;
+			font-family: Arial, Bold;
+			font-size: 60px;
+			color: white;
+			text-align: center;
+			padding-top: 15px;
+		}
+	}
+}
+
+// ======RESPONSIVENESS=======//
+@media screen and (max-width: 1200px) {
+	.button-row {
+		display: flex;
+		justify-content: center;
+		background-color: chartreuse;
+		opacity: .5;
+		.button-box {
+			// width: 400px;
+			// height: 100px;
+			// background-color: blue;
+			// // margin: 150px auto;
+			// border: 5px solid;
+			// border-color: white;
+			// border-radius: 27px;
+			// margin-left: 100px;
+			// margin-top: 350px;
+			margin-bottom: 50px;
+			.button-fill {
+				width: 380px;
+				height: 160px;
+				background-color: purple;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1780px) {
+	.hero {
+		.dialogue-box {
+			width: 100%;
+			height: 50px;
+			display: flex;
+			background-color: #000;
+			opacity: .7;
+			// justify-content: center;
+			// justify-content: right;
+			// align-items: center;
+			// opacity: .5;
+			.dialogue-button {
+				width: 100%;
+				// height: 200px;
+				// background-color: #000;
+				// margin-right: 220px;
+				// opacity: .5;
+				font-family: Arial, Bold;
+				font-size: 40px;
+				color: white;
+				// opacity: .8;
+				margin: 0 auto;
+				border-radius: 0;
+
+				p {
+					opacity: none;
+				}
 			}
 		}
 	}
