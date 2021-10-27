@@ -10,6 +10,13 @@ function initListeners() {
     });
 }
 
+function changeRoute() {
+    let hashTag = window.location.hash;
+    let pageID = hashTag.replace("#", "");
+
+    
+}
+
 $(document).ready(function() {
     initListeners();
 });
