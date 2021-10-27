@@ -1,0 +1,149 @@
+.hero {
+	height: 1226px;
+	background-image: linear-gradient(to right, $overlay, $overlay), url(../images/images/heropuppylove.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	.dialogue-box {
+		height: 320px;
+		display: flex;
+		justify-content: right;
+		align-items: center;
+		opacity: .5;
+		.dialogue-button {
+			width: 700px;
+			height: 200px;
+			background-color: #000;
+			margin-right: 220px;
+			// opacity: .5;
+			font-family: Arial, Bold;
+			font-size: 40px;
+			color: white;
+			border-radius: 23px;
+
+			p {
+				// margin-top: 15px;
+			}
+		}
+
+		.line-one {
+			width: 300px;
+			height: 40px;
+			margin: 35px auto;
+		}
+		.line-two {
+			width: 550px;
+			margin: 35px auto;
+		}
+	}
+
+	.button-row {
+		height: 500px;
+		display: flex;
+		.button-box {
+			width: 900px;
+			height: 160px;
+			// background-color: white;
+			border: 5px solid;
+			border-color: white;
+			border-radius: 27px;
+			margin-left: 100px;
+			margin-top: 350px;
+			display: flex;
+			// justify-content: center;
+			// align-items: center;
+
+			.button-fill {
+				background-color: white;
+				width: 880px;
+				height: 140px;
+				border-radius: 20px;
+				font-family: Arial, Bold;
+				font-size: 60px;
+				color: #000;
+				opacity: .6;
+				margin-top: 5px;
+				margin-left: 5px;
+			}
+			.line-three {
+				width: 600px;
+				margin: 30px auto;
+			}
+		}
+	}
+}
+
+// =======OUR MISSION SECTION======//
+.mission {
+	height: 100px;
+	font-family: Arial, Bold;
+	font-size: 60px;
+	color: #000;
+	margin: 150px auto;
+	text-align: center;
+}
+
+// =======TEAM PROFILES========//
+.profile-content {
+	min-height: 200px;
+	background-color: #fae9ee;
+	margin-bottom: 100px;
+	.pup-team {
+		height: 60px;
+		width: 600px;
+		font-family: Arial, Bold;
+		font-size: 40px;
+		color: #000;
+		margin: 0 auto;
+		padding-top: 50px;
+	}
+	.pup-profile {
+		width: 800px;
+		min-height: 300px;
+		// opacity: .5;
+		margin: 100px auto;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		background-color: chartreuse;
+		margin-bottom: 150px;
+
+		.pup-image {
+			width: 258px;
+			height: 250px;
+			background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat;
+			position: relative;
+		}
+
+		.pup1 {
+			background-image: url(../images/images/pupprofileone.png);
+		}
+		.pup2 {
+			background-image: url(../images/images/pupprofile3.png);
+		}
+
+		.pup-content {
+			width: 400px;
+			min-height: 100px;
+			margin-bottom: 50px;
+
+			h1 {
+				font-family: Arial, Bold;
+				font-size: 40px;
+				color: #000;
+				margin-top: 25px;
+			}
+			p {
+				font-family: Arial, Bold;
+				font-size: 20px;
+				color: #000;
+				letter-spacing: .4px;
+				line-height: 30px;
+				margin-top: 30px;
+			}
+		}
+	}
+}
