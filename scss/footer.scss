@@ -1,12 +1,12 @@
 footer {
-	height: 250px;
+	min-height: 250px;
 	background-color: #000;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	.footer-content {
 		width: 1600px;
-		height: 200px;
+		min-height: 200px;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -71,6 +71,39 @@ footer {
 				.twit {
 					background-image: url(../images/socials/twitter.png);
 				}
+			}
+		}
+	}
+}
+
+// ======RESPONSIVENESS=======//
+
+@media screen and (max-width: 1700px) {
+	footer {
+		.footer-content {
+			margin-left: 100px;
+			margin-right: 100px;
+		}
+	}
+}
+
+@media screen and (max-width: 1030px) {
+	footer {
+		.footer-content {
+			flex-direction: column;
+			justify-content: space-around;
+			.footer-logo {
+				margin-top: 50px;
+				margin-bottom: 50px;
+			}
+			.btn1 {
+				margin-bottom: 25px;
+			}
+			.btn2 {
+				margin-bottom: 50px;
+			}
+			.icon-container {
+				margin-bottom: 50px;
 			}
 		}
 	}

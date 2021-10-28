@@ -126,7 +126,7 @@ p {
   }
 }
 footer {
-  height: 250px;
+  min-height: 250px;
   background-color: #000;
   display: flex;
   justify-content: center;
@@ -134,7 +134,7 @@ footer {
 }
 footer .footer-content {
   width: 1600px;
-  height: 200px;
+  min-height: 200px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -198,6 +198,31 @@ footer .footer-content .socials .icon-container .twit {
   background-image: url(../images/socials/twitter.png);
 }
 
+@media screen and (max-width: 1700px) {
+  footer .footer-content {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+}
+@media screen and (max-width: 1030px) {
+  footer .footer-content {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  footer .footer-content .footer-logo {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  footer .footer-content .btn1 {
+    margin-bottom: 25px;
+  }
+  footer .footer-content .btn2 {
+    margin-bottom: 50px;
+  }
+  footer .footer-content .icon-container {
+    margin-bottom: 50px;
+  }
+}
 .hero {
   width: 100%;
   height: 1226px;
@@ -339,7 +364,7 @@ footer .footer-content .socials .icon-container .twit {
 }
 
 .topofpage-container {
-  width: 1700px;
+  max-width: 1700px;
   display: flex;
   justify-content: center;
 }
@@ -389,10 +414,10 @@ footer .footer-content .socials .icon-container .twit {
 }
 @media screen and (max-width: 1200px) {
   .hero .button-row {
+    max-width: 1200px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: chartreuse;
     opacity: 0.5;
   }
   .hero .button-row .button-box {
@@ -408,6 +433,76 @@ footer .footer-content .socials .icon-container .twit {
     font-size: 30px;
     margin: 0 auto;
     padding-left: 20px;
+    opacity: 100%;
+  }
+}
+@media screen and (max-width: 950px) {
+  .hero .dialogue-box {
+    display: flex;
+    justify-content: center;
+  }
+  .hero .dialogue-box .dialogue-button {
+    font-size: 30px;
+    margin-left: 100px;
+  }
+  .hero .button-row {
+    max-width: 950px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero .button-row .button-box {
+    width: 400px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 100px;
+  }
+  .hero .button-row .button-box .button-fill {
+    width: 380px;
+    height: 80px;
+    font-size: 30px;
+    margin: 0 auto;
+    padding-left: 20px;
+    opacity: 100%;
+  }
+
+  .profile-content .pup-profile {
+    max-width: 801px;
+    min-height: 200px;
+    flex-direction: column;
+  }
+  .profile-content .pup-profile .pupimage-container {
+    display: flex;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 816px) {
+  .profile-content .pup-profile {
+    max-width: 450px;
+    min-height: 200px;
+    flex-direction: column;
+  }
+  .profile-content .pup-profile .pupimage-container {
+    display: flex;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 750px) {
+  .mission {
+    font-size: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+}
+@media screen and (max-width: 630px) {
+  .hero .button-row .button-box {
+    width: 300px;
+  }
+  .hero .button-row .button-box .button-fill {
+    width: 280px;
+    font-size: 25px;
   }
 }
 .browse-content h1 {

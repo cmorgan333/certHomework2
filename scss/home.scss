@@ -160,7 +160,7 @@
 
 // ===BROWSE CUTE PUPPIES! BUTTON====//
 .topofpage-container {
-	width: 1700px;
+	max-width: 1700px;
 	display: flex;
 	justify-content: center;
 	.topofpage-border {
@@ -227,10 +227,10 @@
 	.hero {
 		.button-row {
 			// height: 200px;
+			max-width: 1200px;
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			background-color: chartreuse;
 			opacity: .5;
 			.button-box {
 				width: 400px;
@@ -246,6 +246,97 @@
 					font-size: 30px;
 					margin: 0 auto;
 					padding-left: 20px;
+					opacity: 100%;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 950px) {
+	.hero {
+		.dialogue-box {
+			display: flex;
+			justify-content: center;
+			.dialogue-button {
+				font-size: 30px;
+				margin-left: 100px;
+			}
+		}
+		.button-row {
+			// height: 200px;
+			max-width: 950px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			// opacity: .7;
+			.button-box {
+				width: 400px;
+				height: 100px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				margin-right: 100px;
+				// margin-bottom: 50px;
+
+				.button-fill {
+					width: 380px;
+					height: 80px;
+					font-size: 30px;
+					margin: 0 auto;
+					padding-left: 20px;
+					opacity: 100%;
+				}
+			}
+		}
+	}
+	.profile-content {
+		.pup-profile {
+			max-width: 801px;
+			min-height: 200px;
+			flex-direction: column;
+			// align-items: center;
+			// justify-content: space-around;
+			.pupimage-container {
+				display: flex;
+				align-items: center;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 816px) {
+	.profile-content {
+		.pup-profile {
+			max-width: 450px;
+			min-height: 200px;
+			flex-direction: column;
+			// align-items: center;
+			// justify-content: space-around;
+			.pupimage-container {
+				display: flex;
+				align-items: center;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 750px) {
+	.mission {
+		font-size: 30px;
+		margin-left: 100px;
+		margin-right: 100px;
+	}
+}
+
+@media screen and (max-width: 630px) {
+	.hero {
+		.button-row {
+			.button-box {
+				width: 300px;
+				.button-fill {
+					width: 280px;
+					font-size: 25px;
 				}
 			}
 		}
