@@ -517,7 +517,7 @@ footer .footer-content .socials .icon-container .twit {
   margin-bottom: 100px;
 }
 .browse-content .puppies-container {
-  width: 1200px;
+  max-width: 1200px;
   min-height: 200px;
   display: flex;
   justify-content: space-around;
@@ -527,7 +527,7 @@ footer .footer-content .socials .icon-container .twit {
 }
 .browse-content .puppies-container .puppy-wrapper {
   width: 500px;
-  height: 300px;
+  min-height: 300px;
   margin-top: 100px;
   margin-bottom: 50px;
   display: flex;
@@ -574,7 +574,7 @@ footer .footer-content .socials .icon-container .twit {
 }
 .browse-content .puppies-container .puppy-wrapper .puppy-description {
   width: 200px;
-  height: 300px;
+  min-height: 300px;
   border: 5px solid;
   border-left: none;
   border-color: #000;
@@ -596,7 +596,7 @@ footer .footer-content .socials .icon-container .twit {
   color: #000;
 }
 .browse-content .topofpage-container {
-  width: 1700px;
+  max-width: 1700px;
   display: flex;
   justify-content: center;
 }
@@ -622,4 +622,35 @@ footer .footer-content .socials .icon-container .twit {
   color: white;
   text-align: center;
   padding-top: 15px;
+}
+
+@media screen and (max-width: 1300px) {
+  .browse-content .puppy-title {
+    margin-left: 100px;
+  }
+}
+@media screen and (max-width: 1330px) {
+  .browse-content .puppy-background .puppies-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 675px) {
+  .browse-content h1 {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 560px) {
+  .puppy-container {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .puppy-container .puppy-wrapper {
+    width: 350px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .puppy-container .puppy-wrapper .puppy-description {
+    width: 125px;
+  }
 }
